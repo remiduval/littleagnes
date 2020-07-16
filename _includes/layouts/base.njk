@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-full">
+<html lang="{{ lang }}" class="h-full">
 
 	<head>
 		<title>{{ title }} | {{ settings.name }}</title>
@@ -14,6 +14,9 @@
 		<meta property="og:site_name" content="{{ settings.name }}">
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:image:alt" content="{{ settings.name }}">
+
+		<link rel="alternate" hreflang="en" href="https://littleagnes.co.uk" />
+		<link rel="alternate" hreflang="fr"	href="https://littleagnes.co.uk/fr/" />
 
 		<link rel="dns-prefetch" href="https://identity.netlify.com">
 		<link rel="stylesheet" href="/assets/css/style.css?v={% version %}"/>

@@ -1,5 +1,12 @@
 <header class="">
 	<div class="w-full wrapper-x">
-		<a href="{{ '/' | url }}" class="block py-12 text-2xl text-gray-900 lg:text-3xl font-display">Little Agnes Nursery</a>
+		<div class="flex items-center justify-between">
+			<a href="{{ '/' | url }}" class="block py-12 text-2xl text-gray-900 lg:text-3xl font-display">Little Agnes Nursery</a>
+			<div class="flex">
+				<a href="{{ '/' | url }}">{{ "/_includes/assets/img/lang-en.svg" | svgContents("w-12") | safe }}</a>
+				<a href="{{ '/fr' | url }}">{{ "/_includes/assets/img/lang-fr.svg" | svgContents("w-12") | safe }}</a>
+			</div>
+		</div>
+		
 	</div>
 </header>

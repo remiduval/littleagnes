@@ -17,9 +17,42 @@ collections:
     editor:
       preview: false
     files:
-      - file: content/home.md
-        label: Homepage
-        name: home
+      - file: content/english.md
+        label: English
+        name: english
+        fields:
+          - label: Title
+            name: title
+            required: true
+            widget: string
+            hint: ""
+            default: ""
+          - label: Content
+            name: body
+            required: true
+            widget: markdown
+            hint: ""
+            default: ""
+            buttons:
+              - bold
+              - italic
+              - link
+            editorComponents: []
+          - label: Form catchphrase
+            name: catchphrase
+            required: true
+            widget: string
+            hint: ""
+            default: ""
+          - label: Email us
+            name: emailus
+            required: true
+            widget: markdown
+            buttons:
+              - link
+      - file: content/french.md
+        label: French
+        name: french
         fields:
           - label: Title
             name: title
