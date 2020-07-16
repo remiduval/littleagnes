@@ -17,7 +17,7 @@ module.exports = {
 		'"Noto Color Emoji"',
 	  ],
 	  display: [
-		'Comfortaa',
+		'Handlee',
 		'-apple-system',
 		'BlinkMacSystemFont',
 		'"Segoe UI"',
@@ -33,67 +33,24 @@ module.exports = {
 	  ],
 	},
 	extend: {
-	  spacing: {
-	// 	'4/3': '133.33%',
-		'5/3': '166.67%',
-		'7': '1.75rem',
-	// 	'14': '3.5rem'
-	  },
 	  screens: {
 		'xxl': '1440px'
 	  },
-	//   zIndex: {
-	// 	'-1': '-1',
-	//   },
-	//   minWidth: {
-	// 	'200': '200px',
-	// 	'400': '400px',
-	//   },
-	//   inset: {
-	// 	'-80': '-80px',
-	// 	'5': '0.25rem',
-	// 	'1/2': '50%',
-	//   },
 	  width: {
 		'240': '240px',
-		'740': '740px',
-	// 	'900': '900px',
 	  },
-	  maxWidth: {
-	// 	'140': '140px',
-	// 	'768': '768px',
-		'5/6': '83.333333%',
-	// 	'240': '240px',
+	minWidth: {
+		'400': '400px',
+	},
+	minHeight: {
+		'400': '400px',
+	},
+		  zIndex: {
+		'2000': '2000',
 	  },
-	  maxHeight: {
-		'0': '0',
-	  },
+
 	  colors: {
-		denim: '#0E76A8',
-		sun: {
-			50: '#FFFBF0',
-			100: '#FFF6DF',
-			200: '#FFEDBE',
-			300: '#FFE59E',
-			400: '#FFDC7D',
-			500: '#FFD35D',
-			600: '#FFC017',
-			700: '#D19800',
-			800: '#8B6500',
-			900: '#463300',
-		},
-		mono: {
-			50: '#F2F2F2',
-			100: '#DCDCDC',
-			200: '#BABABA',
-			300: '#979797',
-			400: '#757575',
-			500: '#525252',
-			600: '#424242',
-			700: '#313131',
-			800: '#212121',
-			900: '#101010',		
-		}
+
 	  }
 	},
 	//     backgroundColor: theme => theme('colors'),

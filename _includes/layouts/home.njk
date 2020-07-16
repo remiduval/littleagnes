@@ -1,13 +1,56 @@
 ---
 layout: layouts/base.njk
 ---
-<section class="relative flex min-h-full xl:pt-20">
-	<div class="w-full min-h-full wrapper-x wrapper-y">
-		<h1 class="mb-16 md:mb-20 xl:mb-24">{{ title }}</h1>
-		<div class="max-w-4xl -mx-5 overflow-hidden border-t-4 rounded-lg shadow sm:mx-auto border-sun-500">
-			<div class="copy">
-				{{ layoutContent | safe }}
+<section class="py-20">
+	<div class="w-full wrapper-x wrapper-y">
+		<h1 class="mb-10 text-4xl leading-10 text-center text-gray-900 lg:text-5xl font-display">{{ title }}</h1>
+
+		<div class="max-w-2xl mx-auto mb-20 text-center font-display">{{ layoutContent | safe }}</div>
+
+		<div class="max-w-4xl -mx-5 overflow-hidden bg-white rounded-lg shadow sm:mx-auto">
+			
+			<div class="xl:flex">
+				
+				<div class="flex-1 copy">
+					<div class="px-10 py-3 text-white bg-gray-700">{{ catchphrase }}</div>
+					<div class="px-10 py-6">
+						<div class="mb-8">{{ emailus }}Leave us your email or contact us directly on <a href>nursery@littleagnes.co.uk</a></div>
+						{% include "partials/form.njk" %}
+					</div>
+					
+					
+				</div>
+				<div class="bg-gray-700 min-w-400 min-h-400" id="map"></div>
 			</div>
+
 		</div>
 	</div>
 </section>
+
+<script>
+	// Creating map options
+	var mapOptions = {
+		center: [51.4898121,-0.1209925],
+		zoom: 14
+	}
+
+	// Creating a map object
+	var map = new L.map('map', mapOptions);
+
+	// Creating a Layer object
+	var layer = new L.TileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', {
+		maxZoom: 20,
+		attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+	});
+
+	// Adding layer to the map
+	map.addLayer(layer);
+
+	// Creating a marker
+	var marker = L.marker([51.4898121,-0.1209925]);
+	marker.bindPopup("<span class='text-xl text-right text-gray-900 font-display'>64 Tyers Street<br>London SE11 5AE</span>");
+
+	// Adding marker to the map
+	marker.addTo(map);
+	marker.openPopup();
+</script>

@@ -39,11 +39,17 @@ collections:
               - link
             editorComponents: []
           - label: Form catchphrase
-            name: catchphrae
+            name: catchphrase
             required: true
             widget: string
             hint: ""
             default: ""
+          - label: Email us
+            name: emailus
+            required: true
+            widget: markdown
+            buttons:
+              - link
   - name: settings
     label: Settings
     format: json
