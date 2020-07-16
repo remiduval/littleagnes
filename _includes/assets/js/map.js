@@ -1,6 +1,6 @@
 // Creating map options
 var mapOptions = {
-    center: [51.4898121,-0.1209925],
+    center: [51.489837, -0.118741],
     zoom: 14
 }
 
@@ -18,7 +18,7 @@ var layer = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
 map.addLayer(layer);
 
 // Creating a marker
-var marker = L.marker([51.4898121,-0.1209925]);
+var marker = L.marker([51.489837, -0.118741]);
 marker.bindPopup("<span class='text-xl text-right text-gray-900 font-display'>64 Tyers Street<br>London SE11 5AE</span>");
 
 // Adding marker to the map
