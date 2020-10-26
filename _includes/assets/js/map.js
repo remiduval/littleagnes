@@ -26,9 +26,9 @@ var layer = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}
 map.addLayer(layer);
 
 // Creating a marker
-var marker = L.marker([51.489837, -0.118741]);
-marker.bindPopup("<span class='text-xl text-right text-gray-900 font-display'>64 Tyers Street<br>London SE11 5AE</span>");
+var marker = L.marker([51.487459, -0.120862]);
+//marker.bindPopup("<span class='text-xl text-right text-gray-900 font-display'>64 Tyers Street<br>London SE11 5AE</span>");
 
 // Adding marker to the map
 marker.addTo(map);
-marker.openPopup();
+//marker.openPopup();
