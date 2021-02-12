@@ -1,7 +1,7 @@
 ---
 layout: layouts/home.njk
 permalink: /
-title: Opening in early 2021
+title: Opening Spring 2021
 catchphrase: Register your interest
 emailus: Leave us your email or contact us at
   [nursery@littleagnes.co.uk](mailto:nursery@littleagnes.co.uk)
